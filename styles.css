@@ -1,4 +1,4 @@
-/* Reset et Base */
+
 :root {
     --primary: #0066cc;
     --primary-dark: #004d99;
@@ -82,7 +82,7 @@ body {
     100% { left: 100%; }
 }
 
-/* Navigation */
+
 .aero-nav {
     position: fixed;
     border-radius: 25px;
