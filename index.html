@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspeVision | L'Excellence Aéronautique</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-plane">
+            <i class="fas fa-plane"></i>
+            <div class="loader-track"></div>
+        </div>
+    </div>
+
+    <!-- Navigation Avant-Garde -->
+    <nav class="aero-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Espe<span>Vision</span></a>
+            <div class="nav-menu">
+                <a href="#" class="nav-link active" data-text="Accueil">Accueil</a>
+                <a href="#aeroports" class="nav-link" data-text="Aéroports">Aéroports</a>
+                <a href="#flotte" class="nav-link" data-text="Flotte">Flotte</a>
+                <a href="#technologie" class="nav-link" data-text="Tech">Tech</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+            </div>
+            <div class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Cinématique -->
+    <header class="hero-section">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="https://assets.mixkit.co/videos/46128/46128-720.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-part">L'Art de</span>
+                <span class="title-part">l'Ingénierie</span>
+                <span class="title-part">Aéronautique</span>
+            </h1>
+            <p class="hero-subtitle">Explorez l'excellence dans chaque détail</p>
+            <a href="#aeroports" class="hero-cta">
+                <span>Découvrir</span>
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Section Zoom Interactive -->
+    <section class="zoom-section">
+        <div class="section-header">
+            <h2>Explorez en <span>Détails</span></h2>
+            <p>Passez au peigne fin notre technologie de pointe</p>
+        </div>
+        <div class="zoom-container" id="zoomContainer">
+            <img src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd" alt="Cockpit moderne" class="zoom-base-image">
+            <div class="zoom-lens"></div>
+            <div class="zoom-result-container">
+                <div class="zoom-result"></div>
+            </div>
+        </div>
+        <div class="zoom-controls">
+            <button class="zoom-btn" data-zoom="1.5">1.5x</button>
+            <button class="zoom-btn active" data-zoom="2">2x</button>
+            <button class="zoom-btn" data-zoom="3">3x</button>
+        </div>
+    </section>
+
+    <!-- Section Aéroports -->
+    <section class="aeroports-section" id="aeroports">
+        <div class="section-header">
+            <h2>Architectures <span>Aéroportuaires</span></h2>
+            <p>Où l'innovation rencontre l'efficacité</p>
+        </div>
+        <div class="aeroport-grid">
+            <!-- Carte 1 -->
+            <div class="aeroport-card">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1527631746610-bca00a040d60');">
+                    <div class="card-badge">Top 1</div>
+                </div>
+                <div class="card-content">
+                    <h3>Changi, Singapour</h3>
+                    <p>Une oasis technologique avec la plus haute tour de glisse intérieure</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>65M passagers/an</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-tree"></i>
+                            <span>+2000 arbres</span>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link">Explorer <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="card-overlay"></div>
+            </div>
+            
+            <!-- Carte 2 -->
+            <div class="aeroport-card">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05');">
+                    <div class="card-badge">Mega Hub</div>
+                </div>
+                <div class="card-content">
+                    <h3>Dubai International</h3>
+                    <p>Le hub mondial avec le plus grand espace duty-free</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>86M passagers/an</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span>56,000 m² retail</span>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link">Explorer <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="card-overlay"></div>
+            </div>
+            
+            <!-- Carte 3 -->
+            <div class="aeroport-card">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9');">
+                    <div class="card-badge">Iconique</div>
+                </div>
+                <div class="card-content">
+                    <h3>Heathrow, Londres</h3>
+                    <p>L'aéroport le plus fréquenté d'Europe avec 80 compagnies</p>
+                    <div class="card-stats">
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>61M passagers/an</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-route"></i>
+                            <span>203 destinations</span>
+                        </div>
+                    </div>
+                    <a href="#" class="card-link">Explorer <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="card-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Flotte -->
+    <section class="flotte-section" id="flotte">
+        <div class="flotte-container">
+            <div class="flotte-header">
+                <h2>Notre <span>Flotte</span> d'Exception</h2>
+                <p>Des machines conçues pour repousser les limites</p>
+            </div>
+            
+            <div class="flotte-carousel">
+                <!-- Avion 1 -->
+                <div class="avion-card active">
+                    <div class="avion-model">A350-1000</div>
+                    <div class="avion-image">
+                        <img src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd" alt="Airbus A350">
+                        <div class="avion-specs">
+                            <div class="spec">
+                                <span class="spec-value">15,000 km</span>
+                                <span class="spec-label">Autonomie</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-value">Mach 0.89</span>
+                                <span class="spec-label">Vitesse</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-value">-25% CO₂</span>
+                                <span class="spec-label">Emission</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avion-info">
+                        <h3>Airbus A350</h3>
+                        <p>Le fleuron de l'aviation moderne avec fuselage en composite et systèmes optiques</p>
+                        <div class="avion-tech">
+                            <span class="tech-tag">Fly-by-Wire</span>
+                            <span class="tech-tag">SkyLight</span>
+                            <span class="tech-tag">XWB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Avion 2 -->
+                <div class="avion-card">
+                    <div class="avion-model">787-9</div>
+                    <div class="avion-image">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05" alt="Boeing 787">
+                        <div class="avion-specs">
+                            <div class="spec">
+                                <span class="spec-value">14,140 km</span>
+                                <span class="spec-label">Autonomie</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-value">Mach 0.85</span>
+                                <span class="spec-label">Vitesse</span>
+                            </div>
+                            <div class="spec">
+                                <span class="spec-value">-20% fuel</span>
+                                <span class="spec-label">Efficacité</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avion-info">
+                        <h3>Boeing 787</h3>
+                        <p>Révolution des matériaux composites avec fenêtres électrochromatiques</p>
+                        <div class="avion-tech">
+                            <span class="tech-tag">GEnx</span>
+                            <span class="tech-tag">Raffinement</span>
+                            <span class="tech-tag">Dreamliner</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contrôles Carousel -->
+                <div class="carousel-controls">
+                    <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Technologie -->
+    <section class="tech-section" id="technologie">
+        <div class="tech-header">
+            <h2>Technologie <span>Innovante</span></h2>
+            <p>Ce qui nous distingue</p>
+        </div>
+        
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-fan"></i>
+                </div>
+                <h3>Moteurs GEnx</h3>
+                <p>Des turbines à haut rendement réduisant la consommation de 15%</p>
+                <div class="tech-progress">
+                    <div class="progress-bar" style="width: 92%"></div>
+                    <span>92% efficacité</span>
+                </div>
+            </div>
+            
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                <h3>Connexion 5G</h3>
+                <p>Internet haut débit à 35000 pieds avec latence minimale</p>
+                <div class="tech-progress">
+                    <div class="progress-bar" style="width: 85%"></div>
+                    <span>300 Mbps</span>
+                </div>
+            </div>
+            
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3>Éclairage LED</h3>
+                <p>Système dynamique simulant les cycles naturels</p>
+                <div class="tech-progress">
+                    <div class="progress-bar" style="width: 95%"></div>
+                    <span>95% énergie</span>
+                </div>
+            </div>
+            
+            <div class="tech-card">
+                <div class="tech-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Sécurité 360°</h3>
+                <p>Détection avancée des turbulences et systèmes anti-collision</p>
+                <div class="tech-progress">
+                    <div class="progress-bar" style="width: 99%"></div>
+                    <span>99.9% safe</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contactez-<span>Nous</span></h2>
+                <p>Prêt à décoller avec nous ?</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Siège Social</h4>
+                        <p>Lorem ipsum dolor sit amet?</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Téléphone</h4>
+                        <p>+225 01 01 01 01</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>contact@EspeVision.fr</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="subject" required>
+                            <option value="" disabled selected>Sujet</option>
+                            <option value="info">Information</option>
+                            <option value="booking">Réservation</option>
+                            <option value="tech">Support technique</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Envoyer</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="aero-footer">
+        <div class="footer-container">
+            <div class="footer-logo">Espe<span>Vision</span></div>
+            <div class="footer-links">
+                <a href="#">Mentions légales</a>
+                <a href="#">Confidentialité</a>
+                <a href="#">Cookies</a>
+                <a href="#">Accessibilité</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2023 EspeVision. Kouakou Espérance yannick.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
