@@ -1,4 +1,4 @@
-// Attendre que le DOM soit chargé
+
 document.addEventListener('DOMContentLoaded', function() {
     // Preloader
     setTimeout(function() {
@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }, "-=0.5");
     }
 
-    // Navigation
     const nav = document.querySelector('.aero-nav');
     const hamburger = document.querySelector('.nav-hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -86,7 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Fonction de zoom
     const zoomContainer = document.getElementById('zoomContainer');
     if (zoomContainer) {
         const baseImage = zoomContainer.querySelector('.zoom-base-image');
@@ -96,7 +94,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const zoomBtns = document.querySelectorAll('.zoom-btn');
         let zoomLevel = 2;
 
-        // Définir le niveau de zoom par défaut
         zoomBtns.forEach(btn => {
             btn.addEventListener('click', function() {
                 zoomBtns.forEach(b => b.classList.remove('active'));
@@ -137,7 +134,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Carousel pour la flotte
     const prevBtn = document.querySelector('.carousel-prev');
     const nextBtn = document.querySelector('.carousel-next');
     const dots = document.querySelectorAll('.carousel-dots .dot');
@@ -154,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
         currentIndex = index;
     }
 
-    // Événements pour les boutons du carousel
+   
     if (prevBtn && nextBtn) {
         prevBtn.addEventListener('click', function() {
             let newIndex = currentIndex - 1;
@@ -168,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
             updateCarousel(newIndex);
         });
 
-        // Événements pour les points indicateurs
+        
         dots.forEach((dot, index) => {
             dot.addEventListener('click', function() {
                 updateCarousel(index);
@@ -176,10 +172,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Animation des barres de progression tech
+  
     const techCards = document.querySelectorAll('.tech-card');
     
-    // Fonction pour animer les barres de progression lorsqu'elles sont visibles
+  
     function animateProgressBars() {
         techCards.forEach(card => {
             const progressBar = card.querySelector('.progress-bar');
@@ -207,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     animateProgressBars();
 
-    // Animations ScrollTrigger pour les sections
+  
     gsap.registerPlugin(ScrollTrigger);
     
     // Animation pour la section aéroports
@@ -224,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Animation pour la section technologie
+   
     gsap.utils.toArray('.tech-card').forEach((card, index) => {
         gsap.from(card, {
             y: 50,
@@ -239,32 +235,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Validation du formulaire de contact
+    
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Récupération des valeurs du formulaire
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
             
-            // Validation simple
+            
             if (!name || !email || !subject || !message) {
                 alert('Veuillez remplir tous les champs');
                 return;
             }
             
-            // Simuler l'envoi (remplacer par votre logique d'envoi réelle)
-            // Ici, on affiche juste une confirmation
+            
             alert('Merci pour votre message ! Nous vous contacterons bientôt.');
             contactForm.reset();
         });
     }
 
-    // Smooth scroll pour les ancres
+   
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
